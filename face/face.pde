@@ -2,10 +2,9 @@ void setup() {
   size(500, 500);
   background(255, 255, 255);
 }
-
-void draw() {
   int x = 200;
   int y = 200;
+void draw() {
   drawFace(x,y);
   // face
 }
@@ -30,7 +29,7 @@ void drawFace(int x, int y) {
 
 void keyPressed() { 
   if (keyCode == UP) {
-    y = y -2; 
+    y = y - 2; 
   }
 }
 
