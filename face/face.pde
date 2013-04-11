@@ -4,7 +4,9 @@ void setup() {
 }
 
 void draw() {
-  drawFace(200,200);
+  int x = 200;
+  int y = 200;
+  drawFace(x,y);
   // face
 }
 void drawFace(int x, int y) {
@@ -26,4 +28,9 @@ void drawFace(int x, int y) {
   ellipse(x, y+40, 70, 20);
 }
 
+void keyPressed() { 
+  if (keyCode == UP) {
+    y = y -2; 
+  }
+}
 
